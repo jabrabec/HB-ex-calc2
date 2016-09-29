@@ -1,12 +1,15 @@
 def add(input_numbers):
     sum_value = 0
     for index in range(len(input_numbers)):
-        # print "index is:", index
         sum_value += int(input_numbers[index])
     return sum_value
 
-def subtract(num1, num2):
-    return num1 - num2
+
+def subtract(input_numbers):
+    sub_value = int(input_numbers[0])
+    for index in range(1, len(input_numbers)):
+        sub_value -= int(input_numbers[index])
+    return sub_value
 
 
 def multiply(num1, num2):
