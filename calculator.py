@@ -33,3 +33,7 @@ while True:
             print multiply(tokens[1], tokens[2])
         elif tokens[0] == "/":
             print ("%.6f" % divide(tokens[1], tokens[2]))
+        elif tokens[0] == "pow":
+            print power(tokens[1], tokens[2])
+        elif tokens[0] == "mod":
+            print mod(tokens[1], tokens[2])
